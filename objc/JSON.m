@@ -144,7 +144,7 @@ static char ctrl[0x22];
  */
 - (NSString*)stringWithObject:(id)value error:(NSError**)error
 {
-    return [self stringWithObject:value allowScalar:NO error:error];
+    return [self stringWithObject:value allowScalar:YES error:error];
 }
 
 - (NSString*)indent
@@ -381,7 +381,7 @@ static char ctrl[0x22];
  */
 - (id)objectWithString:(NSString*)repr error:(NSError**)error
 {
-    return [self objectWithString:repr allowScalar:NO error:error];
+    return [self objectWithString:repr allowScalar:YES error:error];
 }
 
 /*
